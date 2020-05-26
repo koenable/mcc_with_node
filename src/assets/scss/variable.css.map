@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA;;;IAGI",
+    "mappings": "AAAA;;;IAGI;AAwBJ;;;EAGE",
     "sources": [
         "variable.scss"
     ],

@@ -1,8 +1,36 @@
+/*
+  * Default Variable
+  *
+  */
+/*
+*
+* Define @mixins
+*/
+/*
+*
+* Define @mixins
+*/
+/*
+*
+* Define @mixins
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  overflow: hidden;
+}
+
 .overlay {
   position: absolute;
   width: 100%;
   height: 100vh;
-  background: color(mcc_primary_dark);
+  background: #051015;
   top: 0%;
   z-index: 1;
   display: -webkit-box;
@@ -18,6 +46,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .overlay {
+    height: 10px;
+  }
 }
 
 .overlay .overlay_h2 {
@@ -38,7 +72,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background: color(mcc_light);
+  background: #0f2f3e;
 }
 
 .left-strip {

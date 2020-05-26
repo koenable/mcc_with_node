@@ -1,9 +1,10 @@
-@import "./variable.scss";
 
   @function color($color-name){
     @return map-get($custom_colors, $color-name)
 };
 
+$mobile:768px;
+$ipPad: 1024px;
 /*
 *
 * Define @mixins

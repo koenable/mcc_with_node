@@ -1,9 +1,8 @@
 {
     "version": 3,
-    "mappings": "ACAA;;;IAGI;ADGJ;;;EAGE",
+    "mappings": "AAOA;;;EAGE",
     "sources": [
-        "functions.scss",
-        "variable.scss"
+        "functions.scss"
     ],
     "names": [],
     "file": "functions.css"
