@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-// import { SwUpdate} from '@angular/service-worker';
+import { SwUpdate} from '@angular/service-worker';
 import { HttpService } from "./services/http.service";
 
 
@@ -18,6 +18,8 @@ export class AppComponent {
 
   newJokes:any;
  
+
+
     // constructor(private updates: SwUpdate, 
     //   private httpCall: HttpService){
 
@@ -33,6 +35,11 @@ export class AppComponent {
       //     this.newJokes = res;
       // }) ;
     };
+
+
+
+
+    
 
 }
 

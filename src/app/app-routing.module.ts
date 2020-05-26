@@ -3,9 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component'; 
 import { OurcompanyComponent } from './ourcompany/ourcompany.component';
 
-
 const routes: Routes = [
   { path: '', component: HomeComponent }, 
+  { path: 'home', component: HomeComponent }, 
   { path: 'ourcompany', component: OurcompanyComponent },  
 
 ];

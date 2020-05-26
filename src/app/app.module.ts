@@ -5,6 +5,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { HomeComponent } from './home/home.component';
 
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -21,8 +22,8 @@ import { OurcompanyComponent } from './ourcompany/ourcompany.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    OurcompanyComponent,
-  ],
+    OurcompanyComponent
+      ],
   imports: [
     BrowserModule,
     AppRoutingModule,
