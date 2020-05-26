@@ -1,0 +1,29 @@
+@import "./variable.scss";
+
+  @function color($color-name){
+    @return map-get($custom_colors, $color-name)
+};
+
+/*
+*
+* Define @mixins
+*/
+  @mixin onPhone {
+    
+    @media only screen and (max-width: #{$mobile} )
+    {
+        @content;  
+    }
+
+}
+
+
+
+@mixin oniPad {
+    
+    @media only screen and (max-width: #{$ipPad} )
+    {
+        @content;  
+    }   
+}
+ 

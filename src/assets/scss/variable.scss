@@ -1,0 +1,21 @@
+/*
+  * Default Variable
+  *
+  */
+  $custom_colors:(
+      mcc_primary:rgb(45, 109, 151),
+      mcc_primary_dark: #051015,
+      mcc_primary_darken:(darken(rgb(45, 109, 151), 20%)),
+      
+      mcc_light:lighten(#051015,10%),
+      mcc_dark:rgb(18, 35, 46),
+      mcc_white: #ffff,
+      mcc_white_shadded:seashell,
+  
+      mcc_transparent_nav:rgba(0,0,0,0.2),
+      mcc_purple:rgba(82, 5, 56, 0.884)
+  );
+  
+
+
+  
