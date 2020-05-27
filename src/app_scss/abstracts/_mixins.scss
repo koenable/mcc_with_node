@@ -1,12 +1,5 @@
-  
-@function color($color-name){
-  @return map-get($custom_colors, $color-name)
-
-};
-
 @mixin onDesktop {
     @media only screen and (max-width: #{$desktop} ) {
-        
         @content;
     }
 }
