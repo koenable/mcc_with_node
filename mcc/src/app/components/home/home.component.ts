@@ -59,7 +59,11 @@ export class HomeComponent implements OnInit {
       animationDuration: 1000,
       animationTimingFunc: 'linear',
       perView: 2,
-      peek: 300
+      peek: 300,
+      breakpoints: {
+        879: {perView:2},
+        630:{perView:1}
+      }
     }).mount()
     
   }
