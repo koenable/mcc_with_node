@@ -9,6 +9,11 @@ import {
 } from '@angular/animations';
 
 
+import Glide from '@glidejs/glide'
+
+
+
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -72,10 +77,5 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  isOpen = true;
-
-  toggle() {
-    this.isOpen = !this.isOpen;
-  }
 
 }
