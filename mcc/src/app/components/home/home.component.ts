@@ -36,7 +36,7 @@ import Glide from '@glidejs/glide'
     trigger('slideinLeft', [
       transition('void => *', [
           style({opacity:0, transform: 'translateX(100%)'}),
-          animate('0.6s 1000ms ease-in-out')
+          animate('0.9s 3000ms ease-in-out')
       ]),
       transition('* => void', [
           animate('10ms ease-in-out', style({transform: 'translateY(100%)'}))    

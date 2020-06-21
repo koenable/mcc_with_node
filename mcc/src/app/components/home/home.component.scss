@@ -1,6 +1,6 @@
 @import 'abstracts/variables';
 @import 'abstracts/functions';
-// @import 'abstracts/mixins';
+@import 'abstracts/mixins';
 // @import 'layout/grid';
 
 :host {
@@ -23,24 +23,56 @@
 }
 
 .view {
+  background-color:#ffff;
+
   height: 100vh !important;
-  
-    .tittle{
-      font-size: 6em;
-      text-align: left;
-      font-family: Multi;  
-      color: color(mcc_primary);
-      padding-top: 0.3em;
-    }
+  @include onPhone{
+    background-color: color(mcc_primary);
+  }
+
+  .tittle_div{
+
+
+      .tittle{
+            font-size: 8em;
+            text-align: left;
+            font-family: Multi;  
+            color: color(mcc_primary_darken);
+            // padding-top: 0.3em;
+      
+
+          @include onPhone{
+            font-size: 3em;
+            color: color(mcc_white);
+            padding: 0;
+            margin-top: -2em;
+          }
+
+
+        }
+  }
 
       .landing_link{
           text-align: left;
       }
 
+      .tittle_p_div{
+          // border-left: solid 2px color(mcc_primary);
 
-      .landing_pic{
-        position: relative;
-      }
+          .tittle_p{
+            position: relative;
+            color: color(mcc_primary_darken);
+            float: right;
+            padding-top: 10em;
+
+            @include onPhone{
+              padding:0;
+              color: color(mcc_white);
+            }
+          }
+     
+    }
+      
  }
 
 
