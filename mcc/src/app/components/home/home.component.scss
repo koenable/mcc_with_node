@@ -1,3 +1,8 @@
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+// @import 'abstracts/mixins';
+// @import 'layout/grid';
+
 :host {
   display: block;
 }
@@ -12,7 +17,7 @@
 }
 
 
-
+// Header section
 .intro-header {
   height: unset !important;
 }
@@ -21,9 +26,11 @@
   height: 100vh !important;
   
     .tittle{
-      font-size: 5em;
+      font-size: 6em;
       text-align: left;
-      font-family: Multi;
+      font-family: Multi;  
+      color: color(mcc_primary);
+      padding-top: 0.3em;
     }
 
       .landing_link{

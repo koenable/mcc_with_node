@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+// dependencies for animations
 import {
   trigger,
   state,
@@ -7,11 +7,8 @@ import {
   animate,
   transition,
 } from '@angular/animations';
-
+// import slider 
 import Glide from '@glidejs/glide'
-
-
-
 
 @Component({
   selector: 'app-home',
