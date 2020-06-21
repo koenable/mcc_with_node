@@ -6,28 +6,39 @@
   <button class="btn" (click)="toggle()">
   Toggle  
   </button> -->
-  <!--Main Navigation-->
+<!--Main Navigation-->
 <header class="intro-header">
 
 
   <!-- Intro Section -->
-  <div class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(https://mdbootstrap.com/img/Photos/Others/img%20%2848%29.jpg);">
+  <div class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(./../../assets/bg/bg_1.jpg);   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;">
     <div class="full-bg-img mask rgba-black-light">
       <div class="container flex-center">
         <div class="row pt-5 mt-3 w-100">
-          <div class="col-md-12">
-            <div class="text-center">
-              <h2 @itemState class="h1 h1-reponsive white-text font-up font-bold mb-3 wow fadeInDown" data-wow-delay="0.3s"><strong>
-                Mzanzi College Challenge
-              </strong></h2>
-              <hr class="hr-light mt-4 wow fadeInDown" data-wow-delay="0.4s">
-              <h5 class="font-up mb-5 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>World of College Football</strong></h5>
-              <a mdbBtn color="white" outline="true" class="wow fadeInDown waves-light" data-wow-delay="0.4s"
-                mdbWavesEffect>portfolio</a>
-              <a mdbBtn color="white" outline="true" class="wow fadeInDown waves-light" data-wow-delay="0.4s"
-                mdbWavesEffect>About me</a>
+          <div class="col-md-6">
+            <div class="text-left">
+              <h2 @slideDown   class="h1 h1-reponsive white-text font-up font-bold mb-3 wow fadeInDown tittle"
+                data-wow-delay="0.3s"><strong>
+                  Mzanzi <br> College <br> Challenge
+                </strong></h2>
+                <!-- <hr class="hr-light mt-4 wow fadeInDown" data-wow-delay="0.4s"> -->
+                <h5 @slideUp class="font-up mb-5 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>World of College
+                    Football</strong></h5>
+    
             </div>
           </div>
+          <div class="col-md-6 ">
+            <img @slideinLeft class="landing_pic" src="./../../../assets/bg/landing.jpg" alt="">
+          </div>
+          <div class="col-md-12 text-center">
+            <!-- <hr class="hr-light mt-4 wow fadeInDown" data-wow-delay="0.4s">
+            <h5 class="font-up mb-5 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>World of College
+                Football</strong></h5> -->
+
+          </div>
+
         </div>
       </div>
     </div>
@@ -35,3 +46,28 @@
 
 </header>
 <!--Main Navigation-->
+
+<div class="content_section">
+<div class="container">
+  <div class="row text-center">
+    <div class="col-lg-12 text-center">
+      <ul class="sponsors list-group list-group-horizontal">
+        <li class="list-group-item">
+            <img src="./../../../assets/sponsors/sanbs.jpg" class="sponsors_logo" alt="">
+        </li>
+        <li class="list-group-item">
+          <img src="./../../../assets/sponsors/sanbs.jpg" class="sponsors_logo" alt="">
+      </li>
+      <li class="list-group-item">Sponsor Name</li>
+        <li class="list-group-item">Sponsor Name</li>
+        <li class="list-group-item">Sponsor Name</li>
+        <li class="list-group-item">Sponsor Name</li>
+
+
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+</div>

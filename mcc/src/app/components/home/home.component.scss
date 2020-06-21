@@ -19,8 +19,43 @@
 
 .view {
   height: 100vh !important;
+  
+    .tittle{
+      font-size: 5em;
+      text-align: left;
+    }
+
+      .landing_link{
+          text-align: left;
+      }
+
+
+      .landing_pic{
+        position: relative;
+      }
+ }
+
+
+// New section
+.content_section{
+  height: 100vh;
+  
+    .sponsors{
+      list-style: none;
+      border: none;
+
+      .sponsors_logo{
+        height: 4em;
+        width: auto;
+      }
+
+    }
+
 }
-.navbar:not(.top-nav-collapse) {
+
+
+
+  .navbar:not(.top-nav-collapse) {
   background: transparent !important;
 }
 
@@ -43,3 +78,4 @@ h5 {
     height: 700px;
   }
 }
+

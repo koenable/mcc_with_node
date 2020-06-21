@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import {  HostBinding } from '@angular/core';
 import {
   trigger,
   state,
@@ -37,15 +36,33 @@ import {
   //   ]),
   // ]
   animations: [
-    trigger('itemState', [
+    trigger('slideDown', [
         transition('void => *', [
-            style({opacity:0, transform: 'translateY(-100%)'}),
-            animate('0.6s 900ms ease-in-out')
+            style({opacity:0, transform: 'translateY(-10%)'}),
+            animate('0.6s 2000ms ease-in-out')
         ]),
         transition('* => void', [
             animate('10ms ease-in-out', style({transform: 'translateY(100%)'}))    
         ])
-    ])
+    ]),
+    trigger('slideUp', [
+      transition('void => *', [
+          style({opacity:0, transform: 'translateY(10%)'}),
+          animate('0.6s 3000ms ease-in-out')
+      ]),
+      transition('* => void', [
+          animate('10ms ease-in-out', style({transform: 'translateY(100%)'}))    
+      ])
+  ]),
+    trigger('slideinLeft', [
+      transition('void => *', [
+          style({opacity:0, transform: 'translateX(100%)'}),
+          animate('0.6s 1000ms ease-in-out')
+      ]),
+      transition('* => void', [
+          animate('10ms ease-in-out', style({transform: 'translateY(100%)'}))    
+      ])
+  ]),
 ]
 })
 export class HomeComponent implements OnInit {
