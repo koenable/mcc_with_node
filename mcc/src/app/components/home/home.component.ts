@@ -55,7 +55,7 @@ export class HomeComponent implements OnInit {
       gap:1,
       animationDuration: 1000,
       animationTimingFunc: 'linear',
-      perView: 2,
+      perView: 3,
       peek: 300,
       breakpoints: {
         879: {perView:2},

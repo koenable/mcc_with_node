@@ -24,14 +24,13 @@
 
 .view {
   background-color:#ffff;
-
+ 
   height: 100vh !important;
   @include onPhone{
     background-color: color(mcc_primary);
   }
 
   .tittle_div{
-
 
       .tittle{
             font-size: 8em;
@@ -44,8 +43,8 @@
           @include onPhone{
             font-size: 3em;
             color: color(mcc_white);
-            padding: 0;
-            margin-top: -2em;
+            padding-top: 2em;
+            // margin-top: -2em;
           }
 
 
@@ -58,12 +57,14 @@
 
       .tittle_p_div{
           // border-left: solid 2px color(mcc_primary);
-
           .tittle_p{
             position: relative;
-            color: color(mcc_primary_darken);
+            color: color(mcc_light);
             float: right;
             padding-top: 10em;
+            // border-left: 2px solid color(mcc_primary);
+            // background-color: color(mcc_primary);
+            // display: block;
 
             @include onPhone{
               padding:0;
@@ -78,9 +79,25 @@
 
 // New section
 .content_section{
-  height: 100vh;
-
+  // height: 100vh;
+  background-color: whitesmoke ;
+  padding: 2em;
+  .glide{
+    .sponsors_logo{
+      height: 4em;
+      width:auto;
+    }
+  }
 }
+
+.right_devider{
+  position: absolute;
+  background-color: color(mcc_primary);
+  float:right;
+}
+
+
+
 
 
 

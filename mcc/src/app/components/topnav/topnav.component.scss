@@ -1,7 +1,22 @@
-// .navbar:not(.top-nav-collapse) {
-//     background: transparent !important;
-//   }
-  
-  .navbar:not(.top-nav-collapse) {
-        background: #1C2331!important;
-    }
+@import "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+
+.header {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+
+  .menu_trigger {
+    color: color(mcc_dark);
+    display: block;
+    float: left;
+    width: auto;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+
+
+}

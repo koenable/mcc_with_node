@@ -17,7 +17,7 @@ import {
     trigger('slideDown', [
       transition('void => *', [
           style({opacity:0, transform: 'translateY(-10%)'}),
-          animate('0.6s 2000ms ease-in-out')
+          animate('0.6s 5000ms ease-in-out')
       ]),
       transition('* => void', [
           animate('10ms ease-in-out', style({transform: 'translateY(100%)'}))    
