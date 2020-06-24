@@ -27,6 +27,12 @@
         @content;
     }
 }
+@mixin onIphone6_7_8 {
+    @media only screen and (max-width: #{$iphoneX_6_7_8} ) {
+        @content;
+    }
+}
+
 
 @mixin onIphone5 {
     @media only screen and (max-width: #{$iphone_5_se_android} ) {
