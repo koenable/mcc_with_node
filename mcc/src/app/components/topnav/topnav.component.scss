@@ -3,7 +3,7 @@
 @import "abstracts/mixins";
 
 .header {
-  background-color: #fff;
+  background-color:color(mcc_dark);
   position: fixed;
   width: 100%;
   // is the default index thats alighned with the DOM
@@ -14,7 +14,7 @@
   }
 
   .menu_trigger {
-    color: color(mcc_dark);
+    color: color(mcc_white);
     display: block;
     float: left;
     width: auto;
@@ -48,30 +48,72 @@
     }
 
     .menu_close{
+      @include onDesktop{
       color:color(mcc_white);
       display: block;
       float: left;
       width: auto;
-      font-size: 4em;
-      padding: 10px 20px;
+      font-size: 3em;
+      padding: 0px 20px;
       text-decoration: none;
-      
+      top: 0px;
+      position: relative;
+      margin-top: -2em;
+      margin-left:-25em;
+      }
+
       @include onPhone{
         color:black;
+        margin-top: -2em;
+        margin-left:0em;
+        margin-right: -4em;  
+        padding-bottom: 1em;
       }
+
+
+      @include oniPadPro{
+        color:color(mcc_white);
+        margin-top: -15em;
+        margin-left:0em;
+        margin-right: -15em;  
+        padding-bottom: 1em;
+      }
+
+
     }
 
-    .menu_options{
-
-      .menu_option{
-        color:color(mcc_white);
+    .menu_options_list{
+      @include onDesktop{
+        padding-top: 0em;
+        margin-bottom: 0em;
+        }
+      .menu_item{
+        @include onDesktop{
+          font-size: 3em;
+          list-style-type: none;
+          color:color(mcc_white);
+          padding-top: 0em;
+        }
         
         @include onPhone{
           color: color(mcc_dark);
-          padding-left: 1em;
+          padding-left: 0.2em;
+          font-size: 2em;
         }
+      
+        @include oniPadPro{
+          padding-top: 1em;
+        }
+      
+      }
 
+      @include oniPadPro{
+        padding-top: 0em;
+        margin-bottom: -18em;
+      }
 
+      .menu_item:hover{
+        color:color(mcc_dark);
       }
     }
 }
