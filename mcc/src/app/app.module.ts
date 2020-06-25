@@ -10,6 +10,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { CompanyComponent } from './components/company/company.component';
 import { TopnavComponent } from './components/topnav/topnav.component';
+// MDB Angular Free
+import { IconsModule } from 'angular-bootstrap-md'
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { TopnavComponent } from './components/topnav/topnav.component';
     BrowserModule,
     AppRoutingModule,
     MDBBootstrapModule.forRoot(),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    IconsModule
 
   ],
   providers: [],

@@ -6,13 +6,32 @@
 // $iphone_2_xl:411px;
 // $phone: 360px;
 
-@mixin onDesktop {
+@mixin onDesktop_2 {
     @media only screen and (max-width: #{$desktop} ) {
         @content;
     }
 }
+@mixin onDesktop {
+    @media only screen and (min-width: #{$desktop} ) {
+        @content;
+    }
+}
+
+
+@mixin onDesktop_2{
+    @media only screen and (min-width: #{$desktop_2} ) {
+        @content;
+    }
+}
+@mixin onDesktop_3 {
+    @media only screen and (max-width: #{$desktop_3} ) {
+        @content;
+    }
+}
+
+
 @mixin onIpadPro {
-    @media only screen and (max-width: #{$ipadPro} ) {
+    @media only screen and (max-width: #{$ipadPro} ) { 
         @content;
     }
 }

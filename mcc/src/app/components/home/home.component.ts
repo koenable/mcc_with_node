@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 // dependencies for animations
-import { slideDownFirst, slideUp,slideInRight } from "./../../shared/animations";
+import { slideDownFirst, slideUp,slideInRight, slideDownAfter } from "./../../shared/animations";
 // import slider 
 // import Glide from '@glidejs/glide'
 
@@ -8,7 +8,7 @@ import { slideDownFirst, slideUp,slideInRight } from "./../../shared/animations"
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
-  animations: [ slideDownFirst, slideUp,slideInRight]
+  animations: [ slideDownFirst, slideUp,slideInRight, slideDownAfter]
 })
 export class HomeComponent implements OnInit {
 

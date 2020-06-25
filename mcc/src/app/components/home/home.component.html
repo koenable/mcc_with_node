@@ -1,67 +1,215 @@
+<!--Main Navigation-->
 <header class="intro-header">
-  <!-- Intro Section -->
-  <div class="view jarallax" data-jarallax='{"speed": 0.2}'>
-    <div class="full-bg-img mask rgba-black-white">
-      <div class="container flex-center">
-        <div class="row  w-100">
-          <div class="col-md-12 text-center tittle_div">
-            <!-- <div class="text-center tittle_div"> -->
-            <h2 @slideDownFirst class="h1 h1-reponsive  font-up font-bold mb-3 wow fadeInDown tittle"
-              data-wow-delay="0.3s"><strong>
-                Mzanzi <br> College <br> Challenge
-              </strong></h2>
-            <!-- </div> -->
-          </div>
-          <!-- <div class="col-1"></div> -->
-          <div class="col-md-12 text-center tittle_p_div">
-            <h5 @slideUp class="font-up mb-5 wow tittle_p fadeInDown" data-wow-delay="0.4s"><strong>The Home of
-                College
-                Sports</strong></h5>
-          </div>
-          <div class="col-md-12 text-center">
-          </div>
 
+  <!--Navbar-->
+  <!--Navbar-->
+  <mdb-navbar @slideDownAfter SideClass="navbar navbar-expand-lg navbar-dark unique-color" [containerInside]="true">
+
+    <!-- Navbar brand -->
+    <mdb-navbar-brand><a class="navbar-brand" href="#">
+        MCC
+      </a></mdb-navbar-brand>
+
+    <!-- Collapsible content -->
+    <links>
+
+      <!-- Links -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link waves-light" mdbWavesEffect>About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-light" mdbWavesEffect>Partners</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-light" mdbWavesEffect>Sponsors</a>
+        </li>
+      </ul>
+      <!-- Links -->
+
+      <ul class="navbar-nav ml-auto nav-flex-icons">
+        <li class="nav-item">
+          <a class="nav-link">
+            <mdb-icon fab icon="twitter"></mdb-icon>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <mdb-icon fab icon="google-plus"></mdb-icon>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <div class="btn-group" mdbDropdown>
+              <mdb-icon fas icon="user" mdbDropdownToggle></mdb-icon>
+              <div class="dropdown-menu dropdown-menu-right dropdown-primary">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="divider dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </links>
+    <!-- Collapsible content -->
+
+  </mdb-navbar>
+  <!--/.Navbar-->
+  <!-- Intro Section -->
+  <div class="view jarallax" data-jarallax='{"speed": 0.2}'
+    style="background-image: url(./../../assets/bg/bg_1.jpg); background-size: cover; background-repeat:no-repeat;">
+    <div class="full-bg-img mask rgba-black-light">
+      <div class="container flex-center">
+        <div class="row pt-5 mt-3 w-100">
+          <div class="col-md-12">
+            <div class="text-center">
+              <h1 @slideDownFirst class="h1 
+               h1-reponsive white-text text-left font-up font-bold mb-3 wow tittle fadeInDown" data-wow-delay="0.3s">
+                Mzanzi Collenge Challenge
+              </h1>
+              <h5 @slideUp class="text-left font-up mb-5 white-text wow fadeInDown" data-wow-delay="0.4s">
+                The World of College Sports
+              </h5>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+
 </header>
 <!--Main Navigation-->
 
 
-
-
-
-<div class="parallax1_section">
+<section class="content">
 
   <div class="container">
 
     <div class="row">
 
-      <div class="rellax_div_1 col-md-4 col-lg-4 col-sm-12 col-xs-12">
-<!-- 
-        <h1 class="main_tittle">
+      <div class="col-lg-12 pt-5 text-center">
 
-          We are
+        <h3 class="h3-responsive   content_tittle ">
+          College Platform That Intergrates Sports & Academia
+        </h3>
 
-        </h1> -->
+        <p class="intro_text pt-3 ">
+          College Platform That Intergrates Sports and Academia
+
+          College Platform That Intergrates Sports and Academia
+
+          College Platform That Intergrates Sports and Academia
+
+
+        </p>
 
       </div>
 
     </div>
 
+  </div>
+
+</section>
+
+
+<section class="content">
+
+  <div class="container">
+
+    <div class="row services_row">
+
+      <div class="col-lg-3 col-sm-6 col-xm-6 pt-2   services_tittle_div text-center">
+
+        <h1 class="h1 pt-5 pb-3 services_tittle">
+            Offerings
+        </h1>
+
+        </div>
+
+
+      <div class="col-lg-3 col-sm-6 col-xm-6 pt-2 services_card text-center">
+
+        <mdb-card>
+          <!--Card content-->
+          <mdb-card-body>
+
+            <!--Title-->
+            <mdb-card-title>
+              <h4 class="card_tittle">
+                <mdb-icon fas icon="futbol" size="lg"></mdb-icon>
+              </h4>
+            </mdb-card-title>
+
+            <!--Text-->
+            <mdb-card-text class="pt-4"> Some quick example text to build on the card title and make up the bulk of the
+              card's
+              content.
+            </mdb-card-text>
+          </mdb-card-body>
+
+        </mdb-card>
+
+      </div>
+
+      <div class="col-lg-3 col-sm-6 col-xm-6 pt-2 services_card text-center">
+
+        <mdb-card>
+          <!--Card content-->
+          <mdb-card-body>
+
+            <!--Title-->
+            <mdb-card-title>
+              <h4 class="card_tittle">
+                <mdb-icon fas icon="university" size="lg"></mdb-icon>
+              </h4>
+            </mdb-card-title>
+
+            <!--Text-->
+            <mdb-card-text class="pt-4"> Some quick example text to build on the card title and make up the bulk of the
+              card's
+              content.
+            </mdb-card-text>
+          </mdb-card-body>
+
+        </mdb-card>
+
+      </div>
+
+      <div class="col-lg-3 col-sm-6 col-xm-6 pt-2 services_card text-center">
+
+        <mdb-card>
+          <!--Card content-->
+          <mdb-card-body>
+
+            <!--Title-->
+            <mdb-card-title>
+              <h4 class="card_tittle">
+                <mdb-icon fas icon="university" size="lg"></mdb-icon>
+              </h4>
+            </mdb-card-title>
+
+            <!--Text-->
+            <mdb-card-text class="pt-4"> Some quick example text to build on the card title and make up the bulk of the
+              card's
+              content.
+            </mdb-card-text>
+          </mdb-card-body>
+
+        </mdb-card>
+
+      </div>
+
       
-    </div> 
-  
-  </div>
 
 
-<mdb-card class="right_devider">
-  <div class="text-white text-center py-5 px-4 my-5">
-    <div>
-      <h2 class="card-title h1-responsive pt-3  font-bold"><strong>
-          A college space platform that integrates sports and academia
-        </strong></h2>
+
+
     </div>
+
   </div>
-</mdb-card>
+
+</section>
