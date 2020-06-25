@@ -47,38 +47,29 @@ h5 {
 .tittle {
   font-family: Multi;
   color: color(mcc_white);
-  // @include onDesktop_2 {
-  //   font-size: 4em;
-  // }
 }
+
+
+
 
 //content section
 .content {
   height: 30vh;
   width: 100%;
-  // padding-top: 2em;x/
+  display: flex;
 
   .content_tittle {
     font-weight: 450;
     text-align: center;
     color: color(mcc_dark);
-    // padding-top: 3em;
-    // @include onDesktop_2 {
-    //   font-size: 3em;
-    //   // padding-top: 1em;
-    // }
   }
 
   .intro_text {
     color: color(mcc_dark);
     text-align: center;
-    // padding-top: 1em;
   }
 
   .services_row {
-    // @include onDesktop {
-    //   // padding-top: 4em;
-    // }
 
     .services_card {
       .card_tittle {
@@ -91,18 +82,33 @@ h5 {
       .services_tittle {
         color: color(mcc_white);
         text-align: center;
-        // padding-top: 1.5em;
-        // @include onDesktop_2 {
-        //   font-size: 3em;
-        //   // padding-top: 1em;
-        // }
       }
     
     
     }
 
   }
+
 }
+
+.dark_devider{
+  height: 100vh;
+  width: 100%;
+  background-color: color(mcc_dark);
+  padding: 4em;
+
+  mdb-card-header{
+      p {
+       color: black; 
+       font-weight: 400;
+
+      }
+  }
+}
+
+
+
+
 // :host {
 //   display: block;
 // }
