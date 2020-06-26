@@ -15,7 +15,7 @@ import Glide from '@glidejs/glide'
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
   animations: [
-    trigger('slideDown', [
+    trigger('slideD', [
         transition('void => *', [
             style({opacity:0, transform: 'translateY(-10%)'}),
             animate('0.6s 2000ms ease-in-out')
@@ -35,8 +35,8 @@ import Glide from '@glidejs/glide'
   ]),
     trigger('slideinLeft', [
       transition('void => *', [
-          style({opacity:0, transform: 'translateX(100%)'}),
-          animate('0.9s 3000ms ease-in-out')
+          style({opacity:0, transform: 'translateX(-100%)'}),
+          animate('0.6s 4000ms ease-in-out')
       ]),
       transition('* => void', [
           animate('10ms ease-in-out', style({transform: 'translateY(100%)'}))    
