@@ -58,13 +58,13 @@ h5 {
 }
 
 .glide__slide {
-  line-height: 1em;
   margin: 0;
   text-align: center;
 }
 
-.glide__slide .partners_slider {
-  height: 20em;
+.glide__slide .partner_logos {
+  height: 12em;
   width: auto;
+  padding: 0;
 }
 /*# sourceMappingURL=home.component.css.map */

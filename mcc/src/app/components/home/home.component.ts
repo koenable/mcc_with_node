@@ -4,6 +4,7 @@ import { slideDownFirst, slideUp,slideInRight, slideDownAfter } from "./../../sh
 // import slider 
 import Glide from '@glidejs/glide'
 
+import { Controls, Breakpoints } from '@glidejs/glide/dist/glide.modular.esm'
 
 @Component({
   selector: 'app-home',
@@ -29,10 +30,16 @@ export class HomeComponent implements OnInit {
 var glideMulti1 = new Glide('.multi1', {
   // type: 'carousel',
   type: 'slider',
-  autoplay: 5000,
-  perView: 3,
+  // autoplay: 5000,
+  perView: 4,
+  gap:0,
   animationDuration: 1000,
- 
+  breakpoints: {
+    576: {
+      perView:1,
+      autoplay:2000
+    }
+  }
   // gap:
 });
 
@@ -61,7 +68,7 @@ var glideMulti1 = new Glide('.multi1', {
 // });
 
 // glideMulti.mount();
-glideMulti1.mount();
+glideMulti1.mount({ Controls, Breakpoints });
 // glideHeroPeek.mount();
 // glideHero.mount();
 
