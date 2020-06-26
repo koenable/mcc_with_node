@@ -33,9 +33,8 @@
 //  The import for the shame file goes at the bottom of main.scss .
  @import 'shame';
 
- /* You can add global styles to this file, and also import other style files */
-// Required Core Stylesheet
-@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+ // Required Core Stylesheet
+@import "./node_modules/@glidejs/glide/src/assets/sass/glide.core";
 
 // Optional Theme Stylesheet
-@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+@import "./node_modules/@glidejs/glide/src/assets/sass/glide.theme";
