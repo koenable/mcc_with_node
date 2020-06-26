@@ -1,0 +1,42 @@
+
+
+@include onDesktop {
+
+}
+
+@include onDesktop_2{
+
+}
+
+@include onDesktop_3{
+
+}
+
+@include onIpadPro {
+
+}
+
+@include onIpad {
+
+}
+
+@include onIphoneX {
+
+}
+
+@include onIphone6_7_8 {
+}
+
+@include onIphone5 {
+
+}
+
+@include onIphone2 {
+
+}
+
+@include onPhone {
+
+}
+
+

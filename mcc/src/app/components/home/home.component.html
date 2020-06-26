@@ -1,77 +1,150 @@
+<!--Main Navigation-->
 <header class="intro-header">
+
+
+   <mdb-navbar   SideClass="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" [containerInside]="true">
+
+    <mdb-navbar-brand><a class="navbar-brand" href="#">
+        MCC
+      </a></mdb-navbar-brand>
+
+    <links>
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link waves-light" mdbWavesEffect>About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-light" mdbWavesEffect>Partners</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-light" mdbWavesEffect>Sponsors</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ml-auto nav-flex-icons">
+        <li class="nav-item">
+          <a class="nav-link">
+            <mdb-icon fab icon="twitter"></mdb-icon>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <mdb-icon fab icon="google-plus"></mdb-icon>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <div class="btn-group" mdbDropdown>
+              <mdb-icon fas icon="user" mdbDropdownToggle></mdb-icon>
+              <div class="dropdown-menu dropdown-menu-right dropdown-primary">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="divider dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </links>
+
+  </mdb-navbar>
+
+  <!--/.Navbar-->
   <!-- Intro Section -->
   <div class="view jarallax" data-jarallax='{"speed": 0.2}'>
-    <div class="full-bg-img mask rgba-black-white">
+    <div class="full-bg-img mask rgba-black-light">
       <div class="container flex-center">
-        <div class="row  w-100">
-          <div class="col-md-6">
-            <div  class="text-left  tittle_div">
-              <h2 @slideD class="h1 h1-reponsive  font-up font-bold  wow fadeInDown tittle"
-                data-wow-delay="0.3s"><strong>
-                  Mzanzi <br> College <br> Challenge
-                </strong></h2>
-              <!-- <hr class="hr-light mt-4 wow fadeInDown" data-wow-delay="0.4s"> -->
+        <div class="row pt-5 mt-3 w-100">
+          <div class="col-md-12">
+            <div class="text-center">
+              <h1 @slideDownFirst class="h1 
+               h1-reponsive white-text text-left font-up font-bold mb-3 wow tittle fadeInDown" data-wow-delay="0.3s">
+                Mzanzi Collenge Challenge
+              </h1>
+              <h5 @slideUp class="text-left font-up mb-5 white-text wow fadeInDown" data-wow-delay="0.4s">
+                The World of College Sports
+              </h5>
             </div>
           </div>
-          <div class="col-1"></div>
-          <div  class="col-md-4  tittle_p_div" >
-            <h5  class="font-up mb-5 wow tittle_p fadeInDown" data-wow-delay="0.4s"><strong >The Home of
-                College
-                Football</strong></h5>
-          </div>
-          <div class="col-md-12 text-center">
-          </div>
-
         </div>
       </div>
     </div>
   </div>
+
+
 </header>
 <!--Main Navigation-->
 
+<!-- !-- Section: Testimonials v.1 --> -->
+<section class="text-center my-5">
 
-<!-- <div class="content_section">
+  
+</section>
+<!-- Section: Testimonials v.1 -->
+
+
+
+<section class="dark_devider">
+
   <div class="container">
-    <div class="row text-center">
-      <div class="col-lg-12 text-center">
-        <div class="glide" id="glide">
-          <div class="glide__track" data-glide-el="track">
-            <ul class="glide__slides">
-              <li class="glide__slide">
-                <a href="/">
-                  <img src="./../../../assets/sponsors/sanbs.jpg" class="sponsors_logo" alt="">
-                </a>
-              </li>
-              <li class="glide__slide">
-                <a href="/">
-                  <img src="./../../../assets/sponsors/super_sport.jpg" class="sponsors_logo" alt="">
-                </a>
-              </li>
-              <li class="glide__slide">
-                <a href="/">
-                  <img src="./../../../assets/sponsors/sanbs.jpg" class="sponsors_logo" alt="">
-                </a>
-              </li>
-              <li class="glide__slide">
-                <a href="/">
-                  <img src="./../../../assets/sponsors/sanbs.jpg" class="sponsors_logo" alt="">
-                </a>
-              </li>
 
-            </ul>
-          </div>
-        </div>
+    <div class="row">
+      
+      <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+
+        <mdb-card>
+
+          <mdb-card-header>
+            <p>Latest Events</p>
+          </mdb-card-header>
+            <!--Card content-->
+          <mdb-card-body>
+        
+            <!--Title-->
+            <mdb-card-title>
+              <h4>Card Title</h4>
+            </mdb-card-title>
+        
+            <!--Text-->
+            <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's
+              content.
+            </mdb-card-text>
+        
+            <a href="#" mdbBtn color="primary" mdbWavesEffect>Button</a>
+          </mdb-card-body>
+        </mdb-card>
+
       </div>
-    </div>
-  </div>
-</div> -->
 
-<!-- <mdb-card class="right_devider">
-  <div class="text-white text-center py-5 px-4 my-5">
-    <div>
-      <h2 class="card-title h1-responsive pt-3  font-bold"><strong>
-        A college space platform that integrates sports and academia
-      </strong></h2>
+      <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+
+        <mdb-card>
+          <mdb-card-header>
+            <p>Twitter</p>
+          </mdb-card-header>
+
+          <mdb-card-body>
+                  <!--Title-->
+            <mdb-card-title>
+              <h4>Card Title</h4>
+            </mdb-card-title>
+        
+            <!--Text-->
+            <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's
+              content.
+            </mdb-card-text>
+        
+            <a href="#" mdbBtn color="primary" mdbWavesEffect>Button</a>
+          </mdb-card-body>
+        </mdb-card>
+        
+      </div>
+
     </div>
+
   </div>
-</mdb-card> -->
+
+</section>

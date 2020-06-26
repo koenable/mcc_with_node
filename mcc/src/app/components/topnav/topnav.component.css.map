@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "topnav.component.scss"
+    ],
+    "names": [],
+    "file": "topnav.component.css"
+}
