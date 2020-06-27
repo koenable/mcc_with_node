@@ -3,7 +3,7 @@
 }
 
 .top-nav-collapse {
-  background-color: #78909c !important;
+  background-color: !important;
 }
 
 .view {
@@ -63,7 +63,7 @@ h5 {
 }
 
 .glide .glide__slide .partner_logos {
-  height: 12em;
+  height: 10em;
   width: auto;
   padding: 0;
 }
@@ -71,5 +71,14 @@ h5 {
 .glide .glide__arrows .glide__arrow {
   margin-left: 2em;
   color: #263238;
+}
+
+.services {
+  height: 100vh;
+  width: 100%;
+  background-color: #bfd4f0;
+  background-image: url("./../../../assets/bg/bg_light.svg");
+  background-attachment: fixed;
+  background-size: cover;
 }
 /*# sourceMappingURL=home.component.css.map */

@@ -7,7 +7,7 @@
   height: unset !important;
 }
 .top-nav-collapse {
-  background-color: #78909c !important;
+  background-color:  !important;
 }
 .view {
   height: 100vh !important;
@@ -62,7 +62,7 @@ h5 {
     text-align: center;
 
     .partner_logos {
-      height: 12em;
+      height: 10em;
       width: auto;
       padding: 0;
     }
@@ -83,3 +83,15 @@ h5 {
   //   }
   // }
 }
+
+
+// Service Section
+.services{
+  height: 100vh;
+  width: 100%;
+  background-color: #bfd4f0;
+  background-image: url("./../../../assets/bg/bg_light.svg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
