@@ -21,8 +21,8 @@ export class HomeComponent implements OnInit {
     var glideMulti1 = new Glide('.glide', {
       // type: 'carousel',
       type: 'slider',
-      autoplay: 3500,
-      perView: 4,
+      autoplay: 2200,
+      perView: 1,
       startAt:1,
       // peek: {
       //   before: 4,
