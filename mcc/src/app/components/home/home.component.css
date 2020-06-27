@@ -80,5 +80,29 @@ h5 {
   background-image: url("./../../../assets/bg/bg_light.svg");
   background-attachment: fixed;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.content .body_svg_log_div img {
+  height: 14em;
+}
+
+.intro_more {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.intro_more .shape {
+  height: 100vh;
+  width: 100%;
 }
 /*# sourceMappingURL=home.component.css.map */
