@@ -62,7 +62,7 @@ h5 {
     text-align: center;
 
     .partner_logos {
-      height: 9em;
+      height: 6em;
       width: auto;
       padding: 0;
     }
@@ -87,7 +87,7 @@ h5 {
 
 // Service Section
 .services{
-  height: 100vh;
+  // height: 100vh;
   width: 100%;
   background-color: #bfd4f0;
   background-image: url("./../../../assets/bg/bg_light.svg");
@@ -95,20 +95,41 @@ h5 {
   background-size: cover;
   display: flex;  
   flex-wrap: wrap;
+  height: unset !important;
+
 }
 
 .content{
+  height: unset !important;
 
   .body_svg_log_div{
       img{
         height: 14em;
       }
   }
+
+  .selling_points{
+     
+    list-style-type: none;
+    margin: 1em 0px;
+    float: left;
+
+    .rounded_btn{
+    border: 2px solid #77e26d;;
+    border-radius: 35px
+    }
+
+    .rounded_btn_no_border{
+      border-radius: 35px
+
+    }
+  }
 }
 
 
 .intro_more{
-  height: 100vh;
+  height: unset !important;
+
   width: 100%;
   display: flex;  
   flex-wrap: wrap;
