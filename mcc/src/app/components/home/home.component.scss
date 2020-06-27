@@ -11,9 +11,9 @@
 }
 .view {
   height: 100vh !important;
-  background-color: #121233;;
-  background-image: url('./../../../assets/bg/mcc_landing_bg.svg');
-  background-attachment: fixed; 
+  background-color: #121233;
+  background-image: url("./../../../assets/bg/mcc_landing_bg.svg");
+  background-attachment: fixed;
   background-size: cover;
 }
 .navbar:not(.top-nav-collapse) {
@@ -50,21 +50,36 @@ h5 {
 }
 
 .logo_body {
-  width: 7em;
+  width: 10em;
   height: auto;
 }
 
-.glide__slide {
-  // border: 1px solid black;
-  // line-height: 1em;
-  margin: 0;
-  text-align: center;
- 
+.glide {
+  .glide__slide {
+    // border: 1px solid black;
+    // line-height: 1em;
+    margin: 0;
+    text-align: center;
 
-  .partner_logos{
-    height: 12em;
-    width: auto;
-    padding: 0;
+    .partner_logos {
+      height: 12em;
+      width: auto;
+      padding: 0;
+    }
   }
 
+  // When using arrows
+  .glide__arrows {
+    .glide__arrow {
+      margin-left: 2em;
+      color: #263238;
+    }
+  }
+
+  // When using bullets
+  // .glide__bullets{
+  //   .glide__bullet{
+  //     background-color: rgb(6, 11, 87);
+  //   }
+  // }
 }

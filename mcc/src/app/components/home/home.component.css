@@ -53,18 +53,23 @@ h5 {
 }
 
 .logo_body {
-  width: 7em;
+  width: 10em;
   height: auto;
 }
 
-.glide__slide {
+.glide .glide__slide {
   margin: 0;
   text-align: center;
 }
 
-.glide__slide .partner_logos {
+.glide .glide__slide .partner_logos {
   height: 12em;
   width: auto;
   padding: 0;
+}
+
+.glide .glide__arrows .glide__arrow {
+  margin-left: 2em;
+  color: #263238;
 }
 /*# sourceMappingURL=home.component.css.map */
