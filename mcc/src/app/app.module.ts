@@ -11,14 +11,16 @@ import { HomeComponent } from './components/home/home.component';
 import { CompanyComponent } from './components/company/company.component';
 import { TopnavComponent } from './components/topnav/topnav.component';
 // MDB Angular Free
-import { IconsModule } from 'angular-bootstrap-md'
+import { IconsModule } from 'angular-bootstrap-md';
+import { TournamentComponent } from './components/tournament/tournament.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CompanyComponent,
-    TopnavComponent
+    TopnavComponent,
+    TournamentComponent
   ],
   imports: [
     BrowserModule,

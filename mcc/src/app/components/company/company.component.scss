@@ -1,0 +1,37 @@
+.intro-header {
+    height: unset !important;
+  }
+  .view {
+    height: 100vh !important;
+    background-color: #c6c6fd;
+    background-image: url("./../../../assets/bg/bg_light.svg");
+    background-attachment: fixed;
+    background-size: cover;
+
+  }
+  
+  
+  h5 {
+    // letter-spacing: 8px;
+    // letter-spacing: 3px;
+    font-weight: 900;
+  }
+  .hr-light {
+    border-top: 3px solid #fff;
+    width: 80px;
+  }
+  @media (max-width: 740px) {
+    .full-height,
+    .full-height body,
+    .full-height header,
+    .full-height header .view {
+      height: 700px;
+    }
+  }
+  .logo {
+    width: 3em;
+    height: auto;
+  }
+  .tittle {
+    // color: color(mcc_primary);
+  }

@@ -6,29 +6,26 @@
 .intro-header {
   height: unset !important;
 }
-.top-nav-collapse {
-  background-color:  !important;
-}
 .view {
   height: 100vh !important;
   background-color: #121233;
   background-image: url("./../../../assets/bg/mcc_landing_bg.svg");
   background-attachment: fixed;
   background-size: cover;
-}
-.navbar:not(.top-nav-collapse) {
-  background: transparent !important;
-}
-@media (max-width: 768px) {
-  .navbar:not(.top-nav-collapse) {
-    background: #78909c !important;
+
+  .logo_body {
+    width: 15em;
+    height: auto;
+    float: center
   }
+  
 }
 
-h5 {
-  letter-spacing: 8px;
-  letter-spacing: 3px;
-}
+
+// h5 {
+//   letter-spacing: 8px;
+//   letter-spacing: 3px;
+// }
 .hr-light {
   border-top: 3px solid #fff;
   width: 80px;
@@ -52,6 +49,7 @@ h5 {
 .logo_body {
   width: 10em;
   height: auto;
+  // float: center
 }
 
 .glide {
@@ -62,7 +60,7 @@ h5 {
     text-align: center;
 
     .partner_logos {
-      height: 6em;
+      height: 10em;
       width: auto;
       padding: 0;
     }

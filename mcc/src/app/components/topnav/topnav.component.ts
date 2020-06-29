@@ -2,14 +2,14 @@
 import { Component, OnInit } from '@angular/core';
 import { gsap } from "gsap";
 // import aniations
-import { slideDownAfter } from "./../../shared/animations";
+// import { slideDownFirst, slideUp, slideInRight, slideDownAfter } from "./../../shared/animations";
 
 
 @Component({
   selector: 'app-topnav',
   templateUrl: './topnav.component.html',
   styleUrls: ['./topnav.component.scss'],
-  animations: [ slideDownAfter]
+  // animations: [ slideDownAfter]
 })
 export class TopnavComponent implements OnInit {
 

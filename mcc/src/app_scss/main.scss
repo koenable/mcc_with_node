@@ -11,12 +11,18 @@
     color: #fff;
   }
 
+  h1,h2,h3,.p_tittle{
+        font-family: 'GoodTimesRg-Regular';
+  }
+
 
 
 
 
 // import Fontname Multi
 @import "./../assets/fonts/Muli/multi.css";
+@import "./../assets/fonts/GoodTimes/style.css";
+
 
 @import 'abstracts/variables';
 @import 'abstracts/functions';

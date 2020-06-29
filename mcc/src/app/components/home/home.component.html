@@ -1,47 +1,7 @@
 <!--Main Navigation-->
 <header class="intro-header">
 
-
-  <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" [containerInside]="true">
-
-    <mdb-navbar-brand><a class="navbar-brand" href="#">
-        MCC
-      </a></mdb-navbar-brand>
-
-    <links>
-
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link waves-light" mdbWavesEffect>About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link waves-light" mdbWavesEffect>Partners</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link waves-light" mdbWavesEffect>Sponsors</a>
-        </li>
-      </ul>
-
-      <ul class="navbar-nav ml-auto nav-flex-icons">
-        <li class="nav-item">
-          <a class="nav-link" href="https://twitter.com/MCCSouthAfrica" target="_blank">
-            <mdb-icon fab icon="twitter"></mdb-icon>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.instagram.com/mzanzicollegechallenge/?hl=en" target="_blank">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.facebook.com/mzanzicollegechallenge/" target="_blank">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-        </li>
-      </ul>
-    </links>
-
-  </mdb-navbar>
+<app-topnav></app-topnav>
 
   <!--/.Navbar-->
   <!-- Intro Section -->
@@ -49,17 +9,21 @@
     <div class="full-bg-img mask rgba-black-light">
       <div class="container flex-center">
         <div class="row pt-5 mt-3 w-100">
-          <div class="col-md-12">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="text-center">
               <h1 @slideDownFirst class="h1 
-               h1-reponsive white-text text-left font-up font-bold mb-3 wow tittle fadeInDown" data-wow-delay="0.3s">
+               h1-reponsive white-text text-centerfont-up font-bold mb-3 wow tittle fadeInDown" data-wow-delay="0.3s">
                 Mzanzi Collenge Challenge
               </h1>
-              <h5 @slideUp class="text-left font-up mb-5 white-text wow fadeInDown" data-wow-delay="0.4s">
-                The World of College Sports
+              <h5 @slideUp class="text-center font-up mb-5 white-text wow fadeInDown" data-wow-delay="0.4s">
+                The Home of College Sports
               </h5>
             </div>
           </div>
+            <div class="col-lg-12 text-center">
+              <!-- <img src="./../../../assets/logo/logo_updated.png" class="logo_body "> -->
+              <!-- <img src="./../../../assets/logo/logo_updatedg" class="logo_body "> -->
+            </div>
         </div>
       </div>
     </div>
@@ -74,13 +38,13 @@
   <div class="container">
     <div class="row   ">
       <div class="col-lg-12 col-sm-12 col-sm 12 text-center pb-2">
-        <img src="./../../../assets/logo/logo_updated.png" class="logo_body">
+        <!-- <img src="./../../../assets/logo/logo_updated.png" class="logo_body"> -->
       </div>
       <div class="col-lg-12 col-sm-12 col-sm 12 text-center">
 
-        <h3 class="h4-responsive   pt-2 blue-grey-text">
+        <h4 class="h4-responsive   pt-2 blue-grey-text">
           A college space platform that integrates sports and academia for the purpose of holistic development of students: as Athletes, talent, professionals and sports orientated graduates. 
-        </h3>
+        </h4>
         <p class="text-muted p-responsive pt-3">
           Brought to you in collaboration with the following brands
         </p>
@@ -99,20 +63,18 @@
             <div class="glide__track pl-3 pr-3" data-glide-el="track">
               <ul class="glide__slides">
                 <li class="glide__slide">
-                  <img src="./../../../assets/logo/logo_updated_svg.svg" class="partner_logos" alt="">
+                  <!-- <img src="./../../../assets/logo/logo_updated_svg.svg" class="partner_logos" alt=""> -->
+                  <img src="./../../../assets/logo/logo_updated.png" class="partner_logos" alt="">
                 </li>
                 <li class="glide__slide">
-                  <img src="./../../../assets/partners/sanbs_cropped_svg.svg" class="partner_logos" alt="">
+                  <!-- <img src="./../../../assets/partners/sanbs_cropped_svg.svg" class="partner_logos" alt=""> -->
+                  <img src="./../../../assets/partners/sanbs.png" class="partner_logos" alt="">
+
                 </li>
                 <li class="glide__slide">
-                  <img src="./../../../assets/sponsors/super_sport_cropped_svg.svg" class="partner_logos" alt="">
+                  <img src="./../../../assets/partners/superSport.png" class="partner_logos" alt="">
+                  <!-- <img src="./../../../assets/sponsors/super_sport_cropped_svg.svg" class="partner_logos" alt=""> -->
                 </li>
-                <!-- <li class="glide__slide">
-                  <img src="./../../../assets/logo/logo_updated_svg.svg" class="partner_logos" alt="">
-                </li>
-                <li class="glide__slide">
-                  <img src="./../../../assets/sponsors/sanbs_svg.svg" class="partner_logos" alt="">
-                </li> -->
               </ul>
             </div>
 
@@ -161,7 +123,39 @@
       </div>
     </div>
 
-    <div class="row">
+
+    <!-- <div class="row">
+
+      <div class="col-lg-4 pb-2 col-md-4 col-sm-12 col-xs-12">
+
+        <mdb-card>
+
+          <mdb-card-body>
+
+            <mdb-card-title>
+              <p>
+                <mdb-icon fas icon="university" size="3x" class="blue-grey-text" aria-hidden="true">
+                </mdb-icon>
+              </p>
+
+              <p class="text-dark p_tittle">
+                SPORTING CODES
+              </p>
+
+            </mdb-card-title>
+
+            <mdb-card-text>
+              Player development, Corporate Image
+              Coach development,
+              Professional and academic integrated development,
+              Talent development & management
+              
+            </mdb-card-text>
+
+          </mdb-card-body>
+        </mdb-card>
+      </div>
+
 
       <div class="col-lg-4 pb-2 col-md-4 col-sm-12 col-xs-12">
 
@@ -172,11 +166,80 @@
 
             <mdb-card-title>
               <p>
+                <mdb-icon far icon="futbol" size="3x" class="blue-grey-text" aria-hidden="true">
+                </mdb-icon>
+              </p>
+
+              <p class="text-dark p_tittle">
+                M.C.C TV
+              </p>
+
+            </mdb-card-title>
+
+            <mdb-card-text>
+              Player development, Corporate Image
+              Coach development,
+              Professional and academic integrated development,
+              Talent development & management
+              
+            </mdb-card-text>
+
+          </mdb-card-body>
+        </mdb-card>
+      </div>
+
+
+      <div class="col-lg-4 pb-2 col-md-4 col-sm-12 col-xs-12">
+
+        <mdb-card>
+
+
+          <mdb-card-body>
+
+            <mdb-card-title>
+              <p>
+                <mdb-icon fas icon="brain" size="3x" class="blue-grey-text" aria-hidden="true">
+                </mdb-icon>
+              </p>
+
+              <p class="text-dark p_tittle">
+                M.C.C CARES 
+              </p>
+
+            </mdb-card-title>
+
+            <mdb-card-text>
+              Player development, Corporate Image
+              Coach development,
+              Professional and academic integrated development,
+              Talent development & management
+              
+            </mdb-card-text>
+
+          </mdb-card-body>
+        </mdb-card>
+      </div>
+
+
+
+
+
+    </div> -->
+    <div class="row">
+
+      <div class="col-lg-4 pb-2 col-md-4 col-sm-12 col-xs-12">
+
+        <mdb-card>
+
+          <mdb-card-body>
+
+            <mdb-card-title>
+              <p>
                 <mdb-icon fas icon="university" size="3x" class="blue-grey-text" aria-hidden="true">
                 </mdb-icon>
               </p>
 
-              <p class="text-dark">
+              <p class="text-dark p_tittle">
                 DEVELOPMENT
               </p>
 
@@ -208,7 +271,7 @@
                 </mdb-icon>
               </p>
 
-              <p class="text-dark">
+              <p class="text-dark p_tittle">
                 TRAINING
               </p>
 
@@ -240,8 +303,111 @@
                 </mdb-icon>
               </p>
 
-              <p class="text-dark">
+              <p class="text-dark p_tittle">
                 MENTORSHIP
+              </p>
+
+            </mdb-card-title>
+
+            <mdb-card-text>
+              Player development, Corporate Image
+              Coach development,
+              Professional and academic integrated development,
+              Talent development & management
+              
+            </mdb-card-text>
+
+          </mdb-card-body>
+        </mdb-card>
+      </div>
+
+
+
+
+
+    </div>
+    <div class="row">
+
+      <div class="col-lg-4 pb-2 col-md-4 col-sm-12 col-xs-12">
+
+        <mdb-card>
+
+
+          <mdb-card-body>
+
+            <mdb-card-title>
+              <p>
+                <mdb-icon fas icon="chalkboard-teacher" size="3x" class="blue-grey-text" aria-hidden="true">
+                </mdb-icon>
+              </p>
+
+              <p class="text-dark p_tittle">
+                PROFILING
+              </p>
+
+            </mdb-card-title>
+
+            <mdb-card-text>
+              Player development, Corporate Image
+              Coach development,
+              Professional and academic integrated development,
+              Talent development & management
+              
+            </mdb-card-text>
+
+          </mdb-card-body>
+        </mdb-card>
+      </div>
+
+
+      <div class="col-lg-4 pb-2 col-md-4 col-sm-12 col-xs-12">
+
+        <mdb-card>
+
+
+          <mdb-card-body>
+
+            <mdb-card-title>
+              <p>
+
+                <mdb-icon fas icon="handshake"  size="3x" class="blue-grey-text" aria-hidden="true">
+                </mdb-icon>
+              </p>
+
+              <p class="text-dark p_tittle">
+                CAMPAIGNS
+              </p>
+
+            </mdb-card-title>
+
+            <mdb-card-text>
+              Player development, Corporate Image
+              Coach development,
+              Professional and academic integrated development,
+              Talent development & management
+              
+            </mdb-card-text>
+
+          </mdb-card-body>
+        </mdb-card>
+      </div>
+
+
+      <div class="col-lg-4 pb-2 col-md-4 col-sm-12 col-xs-12">
+
+        <mdb-card>
+
+
+          <mdb-card-body>
+
+            <mdb-card-title>
+              <p>
+                <mdb-icon fab icon="cotton-bureau" size="3x" class="blue-grey-text" aria-hidden="true">
+                </mdb-icon>
+              </p>
+
+              <p class="text-dark p_tittle">
+                APPAREL
               </p>
 
             </mdb-card-title>
@@ -285,10 +451,6 @@
         <p class="text-left text-muted">
           Companies use Contentful content hub software to aggregate all of their content in one place and easily update, audit or share it on any platform. A centralized content hub platform helps teams easily revise and distribute content on the fly. Updates can go live in a matter of seconds, on every channel.
         </p>
-
-        <p class="text-left text-muted">
-          Companies use Contentful content hub software to aggregate all of their content in one place and easily update, audit or share it on any platform. A centralized content hub platform helps teams easily revise and distribute content on the fly. Updates can go live in a matter of seconds, on every channel.
-        </p>
         <ul class="selling_points text-left text-muted">  
           <li class="pb-2">
             <mdb-icon far icon="check-circle light-green-text fa-1x pr-2"></mdb-icon>
@@ -307,10 +469,15 @@
           </li>
           <li class="pt-3">
              <button class=" btn rounded_btn "> View Profile</button>  &nbsp;&nbsp;
-             <button  class=" rounded_btn_no_border btn btn-primary ">About us</button>
+             <a type="button"  routerLink="/company" class=" rounded_btn_no_border btn btn-primary ">About us</a>
           </li>
         </ul> 
       </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+        <!-- <img src="./../../../assets/shapes/circle_svg.svg" alt=""> -->
+      </div>
+
   </div>
   </div>
 </section>    

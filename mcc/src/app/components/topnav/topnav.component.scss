@@ -2,6 +2,11 @@
 // @import "abstracts/functions";
 // @import "abstracts/mixins";
 
+.logo {
+  width: 3em;
+  height: auto;
+}
+
 // .header {
 //   @include onDesktop {
 //     background-color: color(mcc_dark);
@@ -309,3 +314,16 @@
 //     }
 //   }
 // }
+.top-nav-collapse {
+    background-color:  !important;
+  }
+  
+
+  .navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+  }
+  @media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+      background: #78909c !important;
+    }
+  }

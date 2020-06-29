@@ -34,16 +34,16 @@ export class HomeComponent implements OnInit {
 
     })
 
-    var more_services = new Glide('.more_services', {
-      type: 'carousel',
-      autoplay: 3500,
-      perView: 3
-    });
+    // var more_services = new Glide('.more_services', {
+    //   type: 'carousel',
+    //   autoplay: 3500,
+    //   perView: 3
+    // });
     
     
 
     glideMulti1.mount({ Controls, Breakpoints });
-    more_services.mount({ Controls, Breakpoints });
+    // more_services.mount({ Controls, Breakpoints });
 
 
 

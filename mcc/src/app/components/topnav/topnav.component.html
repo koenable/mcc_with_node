@@ -1,30 +1,40 @@
-<!-- <header class="header">
-  <a class="menu_trigger">
-    <i @slideDownAfter class="fas fa-bars" (click)="openMenu();" type="button"></i>
-   </a>
-</header>
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" [containerInside]="true">
+  
+  <mdb-navbar-brand><a class="navbar-brand" href="#">
+    <img src="./../../../assets/logo/logo_updated.png" class="logo" alt="">
+  </a></mdb-navbar-brand>
 
+  <links>
 
-<div class="menu_overlay">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link waves-light" routerLink="/company" mdbWavesEffect>About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect>Partners</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect>Tournament</a>
+      </li>
+    </ul>
 
-  <a class="menu_close">
-    <i class="fas fa-times-circle" (click)="closeMenu();" type="button"></i>
-  </a>
-  <div class="container">
-    <div class="row">
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item">
+        <a class="nav-link" href="https://twitter.com/MCCSouthAfrica" target="_blank">
+          <mdb-icon fab icon="twitter"></mdb-icon>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.instagram.com/mzanzicollegechallenge/?hl=en" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.facebook.com/mzanzicollegechallenge/" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    </ul>
+  </links>
 
-      <div class="col-12-lg menu_options">
-        <ul class="menu_options_list">
-          <li class="menu_item"><a>About Us</a></li>
-          <li class="menu_item"><a>Partners</a></li>
-          <li class="menu_item"><a>Sponsors</a></li>
-          <li class="menu_item"><a>Tournament</a></li>
-        </ul>
-      
-      </div>
-
-    </div>
-
-  </div>
-
-</div> -->
+</mdb-navbar>
